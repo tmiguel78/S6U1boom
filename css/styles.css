@@ -2,16 +2,43 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
   margin: 0;
-  padding: 0;
+  padding: 30px;
+  text-align: center;
 }
 
 h1 {
   color: #333;
 }
+p {
+  margin: 20px;
+}
+input {
+  transform: scale(1.5);
+  width: 30px;
+}
+
+button {
+  margin: 20px;
+  border-radius: 10px;
+}
+button.animar {
+  animation: animacionBoton 2s linear infinite;
+  background-color: yellow;
+
+}
 #result .green {
   color: #2ecc71;
+  font-size: 30px;
 }
 
 #result .red {
   color: #e74c3c;
+  font-size: 30px;
+}
+#countdown {
+  font-size: 50px;
+  margin: 20px;
+}
+@keyframes animacionBoton {
+  50% {transform: scale(1.3)}
 }
